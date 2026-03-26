@@ -8,3 +8,17 @@ Modules:
 - detection_train: Object detection training
 - utils: Training utility functions
 """
+
+from .contrastive import (
+    ContrastiveTrainer,
+    ContrastiveTrainingConfig,
+    info_nce_loss,
+    compute_contrastive_accuracy,
+)
+
+__all__ = [
+    'ContrastiveTrainer',
+    'ContrastiveTrainingConfig',
+    'info_nce_loss',
+    'compute_contrastive_accuracy',
+]

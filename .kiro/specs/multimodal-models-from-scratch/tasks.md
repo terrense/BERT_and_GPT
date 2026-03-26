@@ -204,7 +204,7 @@
 - [x] 15. 检查点 - 确保 Flamingo、LLaVA 模型正确
   - 确保所有测试通过，询问用户是否有问题
 
-- [ ] 16. DETR 目标检测模型
+- [x] 16. DETR 目标检测模型
   - [x] 16.1 实现 CNN Backbone vision/backbone.py
     - 实现简化版 ResNet 作为 backbone
     - _需求: 3.1_
@@ -222,23 +222,23 @@
     - 实现 Object Queries
     - 实现分类头和边界框回归头
     - _需求: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.9_
-  - [-] 16.5 编写 DETR 模型单元测试
+  - [x] 16.5 编写 DETR 模型单元测试
     - 测试匈牙利匹配
     - 测试损失计算
     - 测试前向传播
     - _需求: 3.7, 3.8_
 
-- [ ] 17. 检查点 - 确保 DETR 模型正确
+- [x] 17. 检查点 - 确保 DETR 模型正确
   - 确保所有测试通过，询问用户是否有问题
 
-- [ ] 18. 训练模块
-  - [~] 18.1 实现对比学习训练 training/contrastive.py
+- [-] 18. 训练模块
+  - [x] 18.1 实现对比学习训练 training/contrastive.py
     - 实现 ContrastiveTrainer 类
     - 实现 InfoNCE Loss
     - 支持可学习的温度参数
     - 支持梯度累积
     - _需求: 11.1, 11.2, 11.3, 11.4, 11.6, 11.7, 17.6_
-  - [~] 18.2 实现多模态预训练 training/multimodal_pretrain.py
+  - [-] 18.2 实现多模态预训练 training/multimodal_pretrain.py
     - 实现 MultimodalPreTrainer 类
     - 实现 ITC、ITM、ITG 损失
     - 实现 hard negative mining
