@@ -26,6 +26,7 @@ from multimodal_models_from_scratch.multimodal.blip import (
     itc_loss,
     itm_loss,
 )
+from multimodal_models_from_scratch.multimodal.flamingo import FlamingoModel, FlamingoDecoderLayer
 
 __all__ = [
     "VisualProjection",
@@ -43,4 +44,6 @@ __all__ = [
     "CrossAttentionLayer",
     "itc_loss",
     "itm_loss",
+    "FlamingoModel",
+    "FlamingoDecoderLayer",
 ]

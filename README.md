@@ -54,7 +54,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/你的用户名/encoder_decoder_only_LLM.git
+git clone https://github.com/terrense/encoder_decoder_only_LLM.git
 cd encoder_decoder_only_LLM
 
 # 创建虚拟环境（推荐）

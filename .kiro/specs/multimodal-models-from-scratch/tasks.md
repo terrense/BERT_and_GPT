@@ -172,22 +172,22 @@
 - [x] 12. 检查点 - 确保 CLIP、BLIP、BLIP-2 模型正确
   - 确保所有测试通过，询问用户是否有问题
 
-- [ ] 13. Flamingo 模型
-  - [-] 13.1 实现 Flamingo 模型 multimodal/flamingo.py
+- [x] 13. Flamingo 模型
+  - [x] 13.1 实现 Flamingo 模型 multimodal/flamingo.py
     - 组合冻结的 Vision Encoder、Perceiver Resampler、冻结的 LLM
     - 在 LLM 的 Decoder Layer 中插入 Gated Cross Attention
     - 支持多图像输入
     - _需求: 8.1, 8.4, 8.5, 8.6, 8.7, 8.8_
-  - [~] 13.2 实现 Flamingo 生成方法
+  - [x] 13.2 实现 Flamingo 生成方法
     - 实现 generate 方法，支持多图像条件生成
     - _需求: 8.7_
-  - [~] 13.3 编写 Flamingo 模型单元测试
+  - [x] 13.3 编写 Flamingo 模型单元测试
     - 测试多图像输入处理
     - 测试门控交叉注意力
     - _需求: 8.7_
 
 - [ ] 14. LLaVA 模型
-  - [~] 14.1 实现 LLaVA 模型 multimodal/llava.py
+  - [-] 14.1 实现 LLaVA 模型 multimodal/llava.py
     - 组合 Vision Encoder、Visual Projection（MLP）、LLM
     - 实现视觉 token 插入到 <image> 位置
     - 支持多轮对话格式
