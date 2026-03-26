@@ -208,21 +208,21 @@
   - [x] 16.1 实现 CNN Backbone vision/backbone.py
     - 实现简化版 ResNet 作为 backbone
     - _需求: 3.1_
-  - [ ] 16.2 实现匈牙利匹配 detection/hungarian.py
+  - [x] 16.2 实现匈牙利匹配 detection/hungarian.py
     - 实现 HungarianMatcher 类
     - 使用 scipy.optimize.linear_sum_assignment
     - 计算分类代价、L1 边界框代价、GIoU 代价
     - _需求: 3.7, 14.1, 14.2_
-  - [~] 16.3 实现 DETR 损失函数 detection/losses.py
+  - [x] 16.3 实现 DETR 损失函数 detection/losses.py
     - 实现 DETRLoss 类
     - 包含分类损失、L1 边界框损失、GIoU 损失
     - _需求: 3.8, 14.3, 14.4, 14.5_
-  - [~] 16.4 实现 DETR 模型 detection/detr.py
+  - [x] 16.4 实现 DETR 模型 detection/detr.py
     - 组合 CNN Backbone、2D 位置编码、Transformer Encoder/Decoder
     - 实现 Object Queries
     - 实现分类头和边界框回归头
     - _需求: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.9_
-  - [~] 16.5 编写 DETR 模型单元测试
+  - [-] 16.5 编写 DETR 模型单元测试
     - 测试匈牙利匹配
     - 测试损失计算
     - 测试前向传播
