@@ -11,5 +11,25 @@ Modules:
 from multimodal_models_from_scratch.vision.image_processor import ImageProcessor
 from multimodal_models_from_scratch.vision.patch_embedding import PatchEmbedding
 from multimodal_models_from_scratch.vision.vit import ViTModel
+from multimodal_models_from_scratch.vision.backbone import (
+    FrozenBatchNorm2d,
+    BasicBlock,
+    Bottleneck,
+    PositionEmbeddingSine,
+    ResNet,
+    ResNetBackbone,
+    build_backbone,
+)
 
-__all__ = ['ImageProcessor', 'PatchEmbedding', 'ViTModel']
+__all__ = [
+    'ImageProcessor',
+    'PatchEmbedding',
+    'ViTModel',
+    'FrozenBatchNorm2d',
+    'BasicBlock',
+    'Bottleneck',
+    'PositionEmbeddingSine',
+    'ResNet',
+    'ResNetBackbone',
+    'build_backbone',
+]

@@ -186,7 +186,7 @@
     - 测试门控交叉注意力
     - _需求: 8.7_
 
-- [ ] 14. LLaVA 模型
+- [x] 14. LLaVA 模型
   - [x] 14.1 实现 LLaVA 模型 multimodal/llava.py
     - 组合 Vision Encoder、Visual Projection（MLP）、LLM
     - 实现视觉 token 插入到 <image> 位置
@@ -196,19 +196,19 @@
     - 实现 prepare_inputs_for_generation 方法
     - 实现 generate 方法
     - _需求: 9.8_
-  - [-] 14.3 编写 LLaVA 模型单元测试
+  - [x] 14.3 编写 LLaVA 模型单元测试
     - 测试视觉 token 插入
     - 测试多轮对话处理
     - _需求: 9.8_
 
-- [ ] 15. 检查点 - 确保 Flamingo、LLaVA 模型正确
+- [x] 15. 检查点 - 确保 Flamingo、LLaVA 模型正确
   - 确保所有测试通过，询问用户是否有问题
 
 - [ ] 16. DETR 目标检测模型
-  - [~] 16.1 实现 CNN Backbone vision/backbone.py
+  - [x] 16.1 实现 CNN Backbone vision/backbone.py
     - 实现简化版 ResNet 作为 backbone
     - _需求: 3.1_
-  - [~] 16.2 实现匈牙利匹配 detection/hungarian.py
+  - [ ] 16.2 实现匈牙利匹配 detection/hungarian.py
     - 实现 HungarianMatcher 类
     - 使用 scipy.optimize.linear_sum_assignment
     - 计算分类代价、L1 边界框代价、GIoU 代价
