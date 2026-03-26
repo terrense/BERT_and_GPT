@@ -226,7 +226,6 @@ class FlamingoModel(nn.Module):
         self.norm = RMSNorm(config.d_model)
         
         # LM Head
-        self.lm_head = nn.Linear(config.vocab_size, config.d_model, bias=False)
         self.lm_head = nn.Linear(config.d_model, config.vocab_size, bias=False)
         
         # 权重绑定

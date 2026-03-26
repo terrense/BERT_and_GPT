@@ -18,9 +18,9 @@
 
 ### 🖼️ multimodal_models_from_scratch  
 多模态大模型实现，这部分是真的肝 😵：
-- 👁️ Vision Transformer (ViT)
+- 👁️ Vision Transformer (ViT，这真是我三年前好像就第一次学了，印象很深刻，很牛的一个作品！现在好多大模型就是拿他做visual encoder的。)
 - 🦙 LLaMA / Qwen（带 RoPE、GQA、SwiGLU 这些花活）
-- 🔗 CLIP（对比学习 yyds）
+- 🔗 CLIP（对比学习 yyds， 这也算是多模态领域开山鼻祖了，兄弟们，冲啊！）
 - 🎨 BLIP / BLIP-2（图文理解）
 - 🦩 Flamingo（多图推理）
 - 🗣️ LLaVA（视觉对话）
