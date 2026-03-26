@@ -173,128 +173,128 @@
   - 确保所有测试通过，询问用户是否有问题
 
 - [ ] 13. Flamingo 模型
-  - [-] 13.1 实现 Flamingo 模型 multimodal/flamingo.py
+  - [ ] 13.1 实现 Flamingo 模型 multimodal/flamingo.py
     - 组合冻结的 Vision Encoder、Perceiver Resampler、冻结的 LLM
     - 在 LLM 的 Decoder Layer 中插入 Gated Cross Attention
     - 支持多图像输入
     - _需求: 8.1, 8.4, 8.5, 8.6, 8.7, 8.8_
-  - [~] 13.2 实现 Flamingo 生成方法
+  - [ ] 13.2 实现 Flamingo 生成方法
     - 实现 generate 方法，支持多图像条件生成
     - _需求: 8.7_
-  - [~] 13.3 编写 Flamingo 模型单元测试
+  - [ ] 13.3 编写 Flamingo 模型单元测试
     - 测试多图像输入处理
     - 测试门控交叉注意力
     - _需求: 8.7_
 
 - [ ] 14. LLaVA 模型
-  - [~] 14.1 实现 LLaVA 模型 multimodal/llava.py
+  - [ ] 14.1 实现 LLaVA 模型 multimodal/llava.py
     - 组合 Vision Encoder、Visual Projection（MLP）、LLM
     - 实现视觉 token 插入到 <image> 位置
     - 支持多轮对话格式
     - _需求: 9.1, 9.2, 9.3, 9.4, 9.5, 9.8_
-  - [~] 14.2 实现 LLaVA 生成方法
+  - [ ] 14.2 实现 LLaVA 生成方法
     - 实现 prepare_inputs_for_generation 方法
     - 实现 generate 方法
     - _需求: 9.8_
-  - [~] 14.3 编写 LLaVA 模型单元测试
+  - [ ] 14.3 编写 LLaVA 模型单元测试
     - 测试视觉 token 插入
     - 测试多轮对话处理
     - _需求: 9.8_
 
-- [~] 15. 检查点 - 确保 Flamingo、LLaVA 模型正确
+- [ ] 15. 检查点 - 确保 Flamingo、LLaVA 模型正确
   - 确保所有测试通过，询问用户是否有问题
 
 - [ ] 16. DETR 目标检测模型
-  - [~] 16.1 实现 CNN Backbone vision/backbone.py
+  - [ ] 16.1 实现 CNN Backbone vision/backbone.py
     - 实现简化版 ResNet 作为 backbone
     - _需求: 3.1_
-  - [~] 16.2 实现匈牙利匹配 detection/hungarian.py
+  - [ ] 16.2 实现匈牙利匹配 detection/hungarian.py
     - 实现 HungarianMatcher 类
     - 使用 scipy.optimize.linear_sum_assignment
     - 计算分类代价、L1 边界框代价、GIoU 代价
     - _需求: 3.7, 14.1, 14.2_
-  - [~] 16.3 实现 DETR 损失函数 detection/losses.py
+  - [ ] 16.3 实现 DETR 损失函数 detection/losses.py
     - 实现 DETRLoss 类
     - 包含分类损失、L1 边界框损失、GIoU 损失
     - _需求: 3.8, 14.3, 14.4, 14.5_
-  - [~] 16.4 实现 DETR 模型 detection/detr.py
+  - [ ] 16.4 实现 DETR 模型 detection/detr.py
     - 组合 CNN Backbone、2D 位置编码、Transformer Encoder/Decoder
     - 实现 Object Queries
     - 实现分类头和边界框回归头
     - _需求: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.9_
-  - [~] 16.5 编写 DETR 模型单元测试
+  - [ ] 16.5 编写 DETR 模型单元测试
     - 测试匈牙利匹配
     - 测试损失计算
     - 测试前向传播
     - _需求: 3.7, 3.8_
 
-- [~] 17. 检查点 - 确保 DETR 模型正确
+- [ ] 17. 检查点 - 确保 DETR 模型正确
   - 确保所有测试通过，询问用户是否有问题
 
 - [ ] 18. 训练模块
-  - [~] 18.1 实现对比学习训练 training/contrastive.py
+  - [ ] 18.1 实现对比学习训练 training/contrastive.py
     - 实现 ContrastiveTrainer 类
     - 实现 InfoNCE Loss
     - 支持可学习的温度参数
     - 支持梯度累积
     - _需求: 11.1, 11.2, 11.3, 11.4, 11.6, 11.7, 17.6_
-  - [~] 18.2 实现多模态预训练 training/multimodal_pretrain.py
+  - [ ] 18.2 实现多模态预训练 training/multimodal_pretrain.py
     - 实现 MultimodalPreTrainer 类
     - 实现 ITC、ITM、ITG 损失
     - 实现 hard negative mining
     - 支持多任务联合训练
     - _需求: 12.1, 12.2, 12.3, 12.4, 12.5, 12.6, 12.7_
-  - [~] 18.3 实现视觉指令微调训练 training/visual_instruction.py
+  - [ ] 18.3 实现视觉指令微调训练 training/visual_instruction.py
     - 实现 VisualInstructionTrainer 类
     - 实现指令数据预处理
     - 实现两阶段训练
     - 仅对 response 部分计算损失
     - _需求: 13.1, 13.2, 13.3, 13.4, 13.6, 13.7, 13.8_
-  - [~] 18.4 实现目标检测训练 training/detection_train.py
+  - [ ] 18.4 实现目标检测训练 training/detection_train.py
     - 实现 DetectionTrainer 类
     - 集成匈牙利匹配和 DETR 损失
     - 支持数据增强
     - _需求: 14.1, 14.2, 14.3, 14.4, 14.5, 14.6, 14.7_
-  - [~] 18.5 实现训练工具函数 training/utils.py
+  - [ ] 18.5 实现训练工具函数 training/utils.py
     - 复用 bert-gpt-from-scratch 的训练工具函数
     - 实现训练配置数据类
     - _需求: 17.6_
-  - [~] 18.6 编写训练模块单元测试
+  - [ ] 18.6 编写训练模块单元测试
     - 测试各训练器的 train_step
     - 测试损失计算
     - _需求: 11.7, 12.7, 13.8, 14.7_
 
-- [~] 19. 检查点 - 确保训练模块正确
+- [ ] 19. 检查点 - 确保训练模块正确
   - 确保所有测试通过，询问用户是否有问题
 
 - [ ] 20. 推理模块
-  - [~] 20.1 实现多模态推理引擎 inference/multimodal_engine.py
+  - [ ] 20.1 实现多模态推理引擎 inference/multimodal_engine.py
     - 实现 MultimodalInferenceEngine 类
     - 实现模型加载方法
     - 复用 bert-gpt-from-scratch 的解码策略
     - _需求: 15.1, 15.9, 15.10, 15.11, 15.12, 17.7_
-  - [~] 20.2 实现 ViT 和 DETR 推理
+  - [ ] 20.2 实现 ViT 和 DETR 推理
     - 实现 vit_classify 方法
     - 实现 detr_detect 方法
     - _需求: 15.2, 15.3_
-  - [~] 20.3 实现 CLIP 推理
+  - [ ] 20.3 实现 CLIP 推理
     - 实现 clip_zero_shot_classify 方法
     - 实现 clip_image_text_similarity 方法
     - _需求: 15.4, 15.5_
-  - [~] 20.4 实现 BLIP 推理
+  - [ ] 20.4 实现 BLIP 推理
     - 实现 blip_caption 方法
     - 实现 blip_vqa 方法
     - _需求: 15.6, 15.7_
-  - [~] 20.5 实现 LLaVA 推理
+  - [ ] 20.5 实现 LLaVA 推理
     - 实现 llava_chat 方法
     - 支持多轮对话
     - _需求: 15.8_
-  - [~] 20.6 编写推理模块单元测试
+  - [ ] 20.6 编写推理模块单元测试
     - 测试各推理方法
     - 测试解码策略
     - _需求: 15.9, 15.10, 15.11_
 
-- [~] 21. 最终检查点 - 确保所有模块正确集成
+- [ ] 21. 最终检查点 - 确保所有模块正确集成
   - 确保所有测试通过，询问用户是否有问题
 
 ## 备注
