@@ -27,6 +27,7 @@ from multimodal_models_from_scratch.multimodal.blip import (
     itm_loss,
 )
 from multimodal_models_from_scratch.multimodal.flamingo import FlamingoModel, FlamingoDecoderLayer
+from multimodal_models_from_scratch.multimodal.llava import LLaVAModel, DEFAULT_IMAGE_TOKEN_ID
 
 __all__ = [
     "VisualProjection",
@@ -46,4 +47,6 @@ __all__ = [
     "itm_loss",
     "FlamingoModel",
     "FlamingoDecoderLayer",
+    "LLaVAModel",
+    "DEFAULT_IMAGE_TOKEN_ID",
 ]

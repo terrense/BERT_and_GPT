@@ -187,12 +187,12 @@
     - _需求: 8.7_
 
 - [ ] 14. LLaVA 模型
-  - [-] 14.1 实现 LLaVA 模型 multimodal/llava.py
+  - [x] 14.1 实现 LLaVA 模型 multimodal/llava.py
     - 组合 Vision Encoder、Visual Projection（MLP）、LLM
     - 实现视觉 token 插入到 <image> 位置
     - 支持多轮对话格式
     - _需求: 9.1, 9.2, 9.3, 9.4, 9.5, 9.8_
-  - [~] 14.2 实现 LLaVA 生成方法
+  - [-] 14.2 实现 LLaVA 生成方法
     - 实现 prepare_inputs_for_generation 方法
     - 实现 generate 方法
     - _需求: 9.8_
