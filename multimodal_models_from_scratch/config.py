@@ -169,13 +169,19 @@ class FlamingoConfig:
     Attributes:
         vision_config: 视觉编码器配置
         llm_config: LLM 配置
-        num_latents: Perceiver Resampler 的 latent 向量数量
-        cross_attention_freq: 每隔多少层插入交叉注意力
+        perceiver_depth: Perceiver Resampler 层数
+        perceiver_num_latents: Perceiver Resampler 的 latent 向量数量
+        cross_attn_every_n_layers: 每隔多少层插入门控交叉注意力
+        freeze_vision: 是否冻结视觉编码器
+        freeze_llm: 是否冻结 LLM（门控交叉注意力层除外）
     """
     vision_config: Optional[VisionConfig] = None
     llm_config: Optional[LLaMAConfig] = None
-    num_latents: int = 64
-    cross_attention_freq: int = 4
+    perceiver_depth: int = 6
+    perceiver_num_latents: int = 64
+    cross_attn_every_n_layers: int = 4
+    freeze_vision: bool = True
+    freeze_llm: bool = True
     
     def __post_init__(self):
         if self.vision_config is None:
